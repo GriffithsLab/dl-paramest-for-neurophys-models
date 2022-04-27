@@ -74,7 +74,7 @@ pip install -r requirements.txt
 
 ## Running the notebooks
 
-Notebooks can be run in the `scratch` directory. Use the input data of connectivity to initialize the states (E, I, x, f, v, q) as random arrays, measure connection gain initial values (empirical SC). The initial values on the global and local gains are fixed constnats. The ADAM fitting algorithm is used with the auto gradient calculation for fitting.
+Notebooks for running the model fitting analyses and analyzing+visualizing results can be found in the `notebooks` directory. Use the input data of connectivity to initialize the states (E, I, x, f, v, q) as random arrays, measure connection gain initial values (empirical SC). The initial values on the global and local gains are fixed constnats. The ADAM fitting algorithm is used with the auto gradient calculation for fitting.
 
 ## Contents
 
