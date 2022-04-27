@@ -1,7 +1,3 @@
-Fig04__HCPDataFittingResultsExampleSubs.jpg
-Fig03__SyntheticDataFittingResults.jpg  
-
-
 # Deep Learning-Based Parameter Estimation for Neurophysiological Models of Neuroimaging Data
 
 This repository contains the code for the manuscript "Deep Learning-Based Parameter Estimation for Neurophysiological Models of Neuroimaging Data" on connectome-based neural mass modelling (CNMM) using the Wong-Wang-Deco model (also known as the Dynamic Mean Field model). Using the two-dimensional reduced Wong-Wang equations introduced by Deco and colleagues, one may simulate the connectivity of the brain structure and plot the connectivity weights. Here, we extend these methods to include the use of a loss function to minimize the the difference of the surprise, the entropy, and the prior. It optimizes the hyperparameters that serve as the coefficients for the coupling strengths with the ADAM algorithm. As the emerging computational neuroscience paradigm for modelling large-scale network dynamics in whole-brain modelling, CNMMs allow for estimation of physiological parameters by fitting them to empirical data from activity measured through fMRI and M/EEG sources.
