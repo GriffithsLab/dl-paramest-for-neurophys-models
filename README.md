@@ -1,14 +1,18 @@
+Fig04__HCPDataFittingResultsExampleSubs.jpg
+Fig03__SyntheticDataFittingResults.jpg  
+
+
 # Deep Learning-Based Parameter Estimation for Neurophysiological Models of Neuroimaging Data
 
 This repository contains the code for the manuscript "Deep Learning-Based Parameter Estimation for Neurophysiological Models of Neuroimaging Data" on connectome-based neural mass modelling (CNMM) using the Wong-Wang-Deco model (also known as the Dynamic Mean Field model). Using the two-dimensional reduced Wong-Wang equations introduced by Deco and colleagues, one may simulate the connectivity of the brain structure and plot the connectivity weights. Here, we extend these methods to include the use of a loss function to minimize the the difference of the surprise, the entropy, and the prior. It optimizes the hyperparameters that serve as the coefficients for the coupling strengths with the ADAM algorithm. As the emerging computational neuroscience paradigm for modelling large-scale network dynamics in whole-brain modelling, CNMMs allow for estimation of physiological parameters by fitting them to empirical data from activity measured through fMRI and M/EEG sources.
 
-![model_fitting_diagram_WWD 001](img/Fig01__ModelOverview.jpg)
+![ModelOverview](img/Fig01__ModelOverview.jpg)
 
 Modelling methodology overview: The process of modelling and model-fitting begins by taking the input fMRI data and using a loss function to minimize the the difference of the surprise, the entropy, and the prior. It optimizes the hyperparameters that serve as the coefficients for the coupling strengths using the ADAM algorithm. 
 
 The notebooks contained in this repository have the can be used for each step of the process. Training of the network proceeds on the basis of this input/output mapping. By inputting fMRI noise into the model and simulating the resulting BOLD signal, one can train the global coupling strength parameters to measure the strength of the connection gains to determine which parameters fit best. Using this approach, one can demonstrate the robust recovery of parameters in synthetic data, and then apply the framework to modelling of empirical resting-state fMRI data from the Human Connectome Project database. The model uses an empirical BOLD signal as an output reference. Future work could explore how a generalization to other models of neural dynamics could also be used understand how feasible CNMMs can be applied to different neuronal systems, to task-evoked activity, and to other non-fMRI measurement types. 
 
-## Wong-Wang-Deco (Dynamic Mean Field) model
+## Reduced Wong-Wang (Dynamic Mean Field) model
 
 The computational model of resting-state network dynamics, the dynamic mean field model, was previously introduced in Deco et al., 2013. The dynamic mean field approach involves approximating the average behaviour of an ensemble of neurons, instead of modeling interactions of individual neurons. This mean field model is a reduction of the model presented in Wong & Wang, 2006 to a single population model, and is used in modeling studies of resting-state (Deco et al., 2013; Hansen et al., 2015). The neural activity of each node is given by the following equations:
 
@@ -80,41 +84,45 @@ Notebooks can be run in the `scratch` directory. Use the input data of connectiv
 
 The figures from the manuscript "Deep Learning-Based Parameter Estimation for Neurophysiological Models of Neuroimaging Data" can be reproduced in the following notebooks.
 
-### Figure 3: Bifurcation analysis
+### Figure 2: Bifurcation analysis
 
-![Figure 3](img/fig3.png)
+![Figure 2](img/Fig02__BifurcationDiagram.jpg)
+
 
 The bifurcation analysis results show the dynamics of the WWD model that change as different parameters are tested. The dynamics of the single node network are shown using the eigenvalues that can be used to represent stability. 
 
 Code source: [Bifurcation notebook](../main/scratch/bifurcationanalysis_singleNode_wwd.ipynb).
 
-### Figure 4: Synthetic data model-fitting analysis
 
-![Figure 4](img/fig4.png)
+
+### Figure 3: Synthetic data model-fitting analysis
+
+![Figure 3](img/Fig03__SyntheticDataFittingResults.jpg)
+
 
 The model-fitting analysis on synthetic data (from Hagmann et al., 2008) show the model's ability to recover known parameters. 
 
 Code source: [Synthetic model-fitting notebook](../main/scratch/modelfitting_analysis_synthetic_data.ipynb).
 
-### Figure 5: Parameter-fitting results on the Human Connectome Project data 
 
-![Figure 5](img/fig5.png)
+
+
+
+### Figure 4: Parameter-fitting results on the Human Connectome Project data 
+
+![Figure 4](img/Fig04__HCPDataFittingResultsExampleSubs.jpg)
+
 
 When fitting the parameters to the data from the Human Connectome Project (HCP) as well as the default mode network brain plots. 
 
 Code source: [Generate seed-based brain plots notebook](../main/scratch/generate_seedbased_brainplots.ipynb) and the [model-fitting analysis of HCP data notebook](../main/scratch/modelfitting_analysis_HCP_data.ipynb). 
 
-### Figure 6: Model-fitting results on the Human Connectome Project data 
 
-![Figure 6](img/fig6.png)
-
-The Human Connectome Project data-fitting results show the correlations and effectiveness of fitting parameters and connectivity data to the model.  
-
-Code source: [model-fitting analysis of HCP data notebook](../main/scratch/modelfitting_analysis_HCP_data.ipynb). 
 
 ## Credits 
 
-This project was developed by John Griffiths, Zheng Wang, and Syed Hussain Ather. The work is done at the University of Toronto and the Centre for Addiction and Mental Health in Toronto. 
+This project was developed by John Griffiths, Zheng Wang, and colleagues at the University of Toronto and the Centre for Addiction and Mental Health in Toronto. 
+
 
 ## References
 
