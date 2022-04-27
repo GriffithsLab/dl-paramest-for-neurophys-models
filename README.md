@@ -85,10 +85,9 @@ The figures from the manuscript "Deep Learning-Based Parameter Estimation for Ne
 ![Figure 2](img/Fig02__BifurcationDiagram.jpg)
 
 
-The bifurcation analysis results show the dynamics of the WWD model that change as different parameters are tested. The dynamics of the single node network are shown using the eigenvalues that can be used to represent stability. 
+The bifurcation analysis results show the dynamics of the RWW model that change as different parameters are tested. The dynamics of the single node network are shown using the eigenvalues that can be used to represent stability. 
 
-Code source: [Bifurcation notebook](../main/scratch/bifurcationanalysis_singleNode_wwd.ipynb).
-
+Code source: [RWW bifurcation analysis](notebooks/02_bifurcation_analysis_singlenode.ipynb)
 
 
 ### Figure 3: Synthetic data model-fitting analysis
@@ -98,10 +97,10 @@ Code source: [Bifurcation notebook](../main/scratch/bifurcationanalysis_singleNo
 
 The model-fitting analysis on synthetic data (from Hagmann et al., 2008) show the model's ability to recover known parameters. 
 
-Code source: [Synthetic model-fitting notebook](../main/scratch/modelfitting_analysis_synthetic_data.ipynb).
-
-
-
+Code sources:   
+[Generate synthetic rsfMRI data](notebooks/03a_generate_synthetic_data.ipynb)  
+[Run synthetic data model fitting](notebooks/03b_synthetic_data_run_model_fitting.ipynb)  
+[Analyze synthetic data model fitting results](notebooks/03c_synthetic_data_model_fitting_results.ipynb)  
 
 
 ### Figure 4: Parameter-fitting results on the Human Connectome Project data 
@@ -111,8 +110,9 @@ Code source: [Synthetic model-fitting notebook](../main/scratch/modelfitting_ana
 
 When fitting the parameters to the data from the Human Connectome Project (HCP) as well as the default mode network brain plots. 
 
-Code source: [Generate seed-based brain plots notebook](../main/scratch/generate_seedbased_brainplots.ipynb) and the [model-fitting analysis of HCP data notebook](../main/scratch/modelfitting_analysis_HCP_data.ipynb). 
-
+Code sources:  
+[Run HCP rsfMRI data model fitting](notebooks/04a_hcp_data_run_model_fitting.ipynb)  
+[Analyze HCP rsfMRI data fit results](notebooks/04b_hcp_data_model_fitting_results.ipynb  )
 
 
 ## Credits 
