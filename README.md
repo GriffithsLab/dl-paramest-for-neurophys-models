@@ -10,7 +10,7 @@ The notebooks contained in this repository have the can be used for each step of
 
 ## Reduced Wong-Wang (Dynamic Mean Field) model
 
-The computational model of resting-state network dynamics, the dynamic mean field model, was previously introduced in Deco et al., 2013. The dynamic mean field approach involves approximating the average behaviour of an ensemble of neurons, instead of modeling interactions of individual neurons. This mean field model is a reduction of the model presented in Wong & Wang, 2006 to a single population model, and is used in modeling studies of resting-state (Deco et al., 2013; Hansen et al., 2015). The neural activity of each node is given by the following equations:
+The computational model of resting-state network dynamics, the dynamic mean field model, was previously introduced in Deco et al. (2013) for the case of a single excitatory neural population, and subsequently extended to excitatory and inhibitory populations in Deco et al. (2014), which is the version used here. The dynamic mean field approach involves approximating the average behaviour of an ensemble of neurons, instead of modeling interactions of individual neurons. This mean field model is a reduction of the model presented in Wong & Wang, 2006 to a single population model, and is used in modeling studies of resting-state (Deco et al., 2013; Hansen et al., 2015). The neural activity of each node is given by the following equations:
 
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\dfrac{dS_{i}}{dt} = \dfrac{-S_{i}}{\tau_{s}} %2B \gamma \ (1 - S_{i})\ H(x_{i}) %2B \sigma\eta_{i}(t)">
